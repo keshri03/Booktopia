@@ -20,7 +20,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 app.post('/books', async (req, res) => {
 
     const { details } = req.body;
-    console.log("backend called "+ details);
+    // console.log("backend called "+ details);
     try {
         const propmt = `
         Please provide the names at max 10 books with description as "${details}". Format the response as a numbered list where each book name is on a new line.
