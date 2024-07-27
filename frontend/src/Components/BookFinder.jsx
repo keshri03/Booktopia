@@ -86,12 +86,14 @@ const BookFinder = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setBooks([]);
     setCategory("");
     fetchBooks();
   };
   const handleSubmitCategory = (e) => {
     e.preventDefault();
     setInput("");
+    setBooks([]);
     fetchBooks();
   };
 
